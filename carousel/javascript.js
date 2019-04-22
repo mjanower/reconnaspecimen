@@ -7,6 +7,7 @@ window.onscroll = function () {
   // Horizontal Scroll.
   var y = document.body.getBoundingClientRect().top;
   page.scrollLeft = -y;
+  behavior: 'smooth' 
 
   // Looping Scroll.
   var diff = window.scrollY - dummy_x;
