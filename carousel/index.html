@@ -5,6 +5,13 @@
     <meta charset = "utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(function() {
+          $.scrollify({
+            section : ".pane",
+          });
+        });
+    </script>
 <style>
     html{
     scroll-behavior:smooth;
@@ -75,6 +82,23 @@
     .pane:nth-child(15)  {
       background-color: #111111;
     }
+    $.scrollify({
+    section : ".pane",
+    sectionName : ".pane",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+    before:function() {},
+    after:function() {},
+    afterResize:function() {},
+    afterRender:function() {}
+  });
 </style>
 </head>
 
